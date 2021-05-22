@@ -1,3 +1,22 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-item lines="none">
+        <ion-thumbnail class="ion-no-margin">
+          <ion-img src="../assets/icons/iconApplicationIcon-54x54.png"></ion-img>
+        </ion-thumbnail>
+      </ion-item>
+      <a slot="primary" class="ion-padding-end" routerLink="/home/session-begin" routerDirection="root">Home</a>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>
+  <ion-footer [translucent]="true" class="ion-no-border ion-text-center">
+    <ion-toolbar>
+      <ion-title>
+        © Avantari Technologies. All Rights Reserved. Support: support@support.org
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
 </ion-app>

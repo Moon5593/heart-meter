@@ -1,0 +1,84 @@
+<ion-content>
+  <!--<highcharts-chart
+   [Highcharts] = "highcharts" 
+   [options] = "myChart" 
+   style = "width: 100%; height: 400px; display: block;">
+</highcharts-chart>-->
+<ion-grid>
+  <ion-row>
+    <ion-col size-md="5" size-sm="12" offset-md="3">
+      <div id="container" style="display: block; width: 400px; height: 400px; margin: auto; margin-top: 20vh;"></div>
+    </ion-col>
+    <ion-col size-xs="6" size-md="2" offset-xs="3" offset-md="0" class="ion-text-center">
+      <ion-card style="margin-top: 25vh;" class="ion-hide-md-down ion-padding">
+        <ion-card-header>
+          Current number
+        </ion-card-header>
+        <ion-card-content>
+          <h1 class="ion-padding">{{ random_num }}</h1>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="ion-hide-md-up ion-padding">
+        <ion-card-header>
+          Current number
+        </ion-card-header>
+        <ion-card-content>
+          <h1 class="ion-padding">{{ random_num }}</h1>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-hide-md-down">
+    <ion-col size="4" offset="8">
+      <ion-item lines="none">
+        <ion-text><span style="color: green;">●</span>0,1,2,3,4,5,6,8,9</ion-text>
+        <span class="ion-padding-start"></span>
+        <ion-text><span style="color: red;">●</span>7</ion-text>
+      </ion-item>
+    </ion-col>
+    <ion-col size="4" offset="4" class="ion-text-center">
+      <ion-button (click)="stopSession()">Stop session</ion-button>
+    </ion-col>
+    <ion-col size="6" offset="3" class="ion-text-center">
+      <ion-button (click)="clearRecords()">Clear all records</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-hide-md-up">
+    <ion-col size="6" offset="6">
+      <ion-item lines="none">
+        <ion-text><span style="color: green;">●</span>0,1,2,3,4,5,6,8,9</ion-text>
+        <span class="ion-padding-start"></span>
+        <ion-text><span style="color: red;">●</span>7</ion-text>
+      </ion-item>
+    </ion-col>
+    <ion-col size="4" offset="4" class="ion-text-center">
+      <ion-button (click)="stopSession()">Stop session</ion-button>
+    </ion-col>
+    <ion-col size="6" offset="3" class="ion-text-center">
+      <ion-button (click)="clearRecords()">Clear all records</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-item-divider></ion-item-divider>
+  <ion-row class="table ion-margin-top">
+    <ion-col size="8" offset="2">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">Number</ion-col>
+          <ion-col size="6">Time</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let item of table_data">
+          <ion-col size="6">{{ item.data }}</ion-col>
+          <ion-col size="6">{{ item.time }}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-col>
+  </ion-row>
+  <ion-item-divider></ion-item-divider>
+
+</ion-grid>
+
+</ion-content>
