@@ -3,7 +3,6 @@ This application is build with the help of two frameworks Angular and Ionic v5. 
 
 ## Deployment
 Link to application - https://heart-rate-73d27.web.app/home
-Github deployment - https://github.com/tanmay0057/heart-meter
 
 ## Frontend
 The frontend is Angular with Ionic pages and routing. The frontend is composed of total three pages. First is home page which holds the second page (session-begin page) which has button to start the session. The third page is the main-chart page which includes the core application. To display a decent chart, I have used Highcharts library which is very popular javascript library to work with chart's.
