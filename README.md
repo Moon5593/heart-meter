@@ -1,9 +1,6 @@
 # Heart Rate Meter
 This application is build with the help of two frameworks Angular and Ionic v5. The purpose of using Ionic framework with Angular framework is Ionic helps to build a pixel responsive applications which fits in all scenarios since it is framework independant and hence when Ionic application is built with any framework (like Angular)/without any framework even, it helps to deploy the application as an Android/iPhone application or as a PWA (progressive web app) or as a Electron app. The Ionic when built with Angular like this current application, it wraps the web app into a native mobile app (in case of mobile) and provides some extra functionalities. The functionalities mainly include web components and which is the main reason I picked Ionic framework.
 
-## Deployment
-Link to application - https://heart-rate-73d27.web.app/home
-
 ## Frontend
 The frontend is Angular with Ionic pages and routing. The frontend is composed of total three pages. First is home page which holds the second page (session-begin page) which has button to start the session. The third page is the main-chart page which includes the core application. To display a decent chart, I have used Highcharts library which is very popular javascript library to work with chart's.
 Main-chart page is full placed inside ion-grid component which helps to control the pixel responsiveness of this application which in turn looks good in all devices and screen sizes.
